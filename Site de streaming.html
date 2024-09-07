@@ -3,47 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streaming</title>
+    <title>Football Achievements</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header style="background-color: #333; color: #fff; padding: 20px;">
-        <h1>Streaming</h1>
-        <div class="search-bar" style="margin-bottom: 20px;">
-            <input type="text" id="search" placeholder="Rechercher un film...">
-            <button onclick="rickRoll()">Rechercher</button>
-        </div>
+    <header>
+        <h1>Football Achievements</h1>
+        <nav>
+            <ul>
+                <li><a href="#champions-league">Ligue des Champions</a></li>
+                <li><a href="#championships">Championnat</a></li>
+                <li><a href="#ballon-dor">Ballon d'Or</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container" id="movies" style="display: flex; flex-wrap: wrap; justify-content: center; padding: 20px;">
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Pulp Fiction</a>
-        </div>
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">The Shawshank Redemption</a>
-        </div>
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">The Godfather</a>
-        </div>
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Inception</a>
-        </div>
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Forrest Gump</a>
-        </div>
-        <div class="film" style="width: 200px; margin: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; text-decoration: none; color: #333; background-color: #fff; transition: all 0.3s ease;">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">The Matrix</a>
-        </div>
-    </div>
-
-    <script>
-        function rickRoll() {
-            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        }
-    </script>
+    <main>
+        <section id="champions-league">
+            <h2>Vainqueurs de la Ligue des Champions</h2>
+            <div id="champions-league-list"></div>
+        </section>
+        <section id="championships">
+            <h2>Vainqueurs des Championnats</h2>
+            <div id="championships-list"></div>
+        </section>
+        <section id="ballon-dor">
+            <h2>Vainqueurs du Ballon d'Or</h2>
+            <div id="ballon-dor-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-               
-
-
-
